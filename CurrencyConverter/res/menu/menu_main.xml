@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<menu tools:context="com.converter.currencyconverter.MainActivity" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<item android:title="@string/Themes" android:orderInCategory="1" android:id="@+id/Themes">
+
+
+<menu>
+
+<item android:title="@string/Mode_Dark" android:id="@+id/Dark_Mode"/>
+
+<item android:title="@string/Mode_Norm" android:id="@+id/Normal_Mode"/>
+
+</menu>
+
+</item>
+
+
+<item android:title="@string/Text_Size" android:orderInCategory="2" android:id="@+id/TextSize">
+
+
+<menu>
+
+<item android:title="@string/txt_sml" android:id="@+id/text_sml"/>
+
+<item android:title="@string/txt_med" android:id="@+id/text_med"/>
+
+<item android:title="@string/txt_lrg" android:id="@+id/text_lrg"/>
+
+</menu>
+
+</item>
+
+<item android:title="@string/Save" android:orderInCategory="3" android:id="@+id/SaveUpdate"/>
+
+</menu>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/portraitView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <NumberPicker
+        android:id="@+id/countryPicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="75dp" />
+
+    <NumberPicker
+        android:id="@+id/countryPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/countryPicker2"
+        android:textColor="@color/OffWhite" />
+
+    <View
+        android:id="@+id/dummy"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:background="#FFFFFF"
+        android:visibility="visible" />
+    
+    <Button
+        android:id="@+id/convertbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/currencyValue"
+        android:layout_marginStart="2dp"
+        android:layout_alignRight="@+id/currencyValue"
+        android:layout_alignLeft="@+id/currencyValue"
+        android:text="@string/Convert" />
+
+    <Button
+        android:id="@+id/updatebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/currencyValue"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/currencyValue"
+        android:layout_marginStart="0dp"
+        android:text="@string/Update" />
+
+    <EditText
+        android:id="@+id/currencyValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="45dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/Dollar"
+        android:inputType="number" />
+
+</RelativeLayout>

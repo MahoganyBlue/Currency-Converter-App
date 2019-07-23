@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string name="app_name">Currency Converter</string>
+
+<string name="action_settings">Settings</string>
+
+<string name="Update">Update</string>
+
+<string name="Convert">Convert</string>
+
+<string name="Dollar">$</string>
+
+<string name="font">Font</string>
+
+<string name="Themes">Theme</string>
+
+<string name="Text_Size">Text Size</string>
+
+<string name="Save">Save Update</string>
+
+<string name="txt_sml">Small Text</string>
+
+<string name="txt_med">Med Text</string>
+
+<string name="txt_lrg">Large Text</string>
+
+<string name="Calibri">Calibri</string>
+
+<string name="Arial">Arial</string>
+
+<string name="Dante">Dante</string>
+
+<string name="Mode_Norm">Default Mode</string>
+
+<string name="Mode_Dark">Dark Mode</string>
+<string name="hello_world">Hello world!</string>
+
+</resources>

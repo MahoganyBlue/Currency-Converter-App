@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/portraitView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/convertbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/currencyValue"
+        android:layout_marginStart="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignRight="@+id/currencyValue"
+        android:layout_alignLeft="@+id/currencyValue"
+        android:text="@string/Convert" />
+
+    <Button
+        android:id="@+id/updatebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/convertbtn"
+        android:layout_alignRight="@+id/currencyValue"
+        android:layout_alignLeft="@+id/currencyValue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="2dp"
+        android:text="@string/Update" />
+
+    <EditText
+        android:id="@+id/currencyValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="false"
+        android:layout_marginBottom="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="@string/Dollar"
+        android:inputType="number" />
+
+    <NumberPicker
+        android:id="@+id/countryPicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dummy"
+        android:layout_above="@+id/updatebtn"
+        android:layout_marginBottom="50dp"/>
+
+    <View 
+        android:id="@+id/dummy"
+        android:visibility="visible"
+        android:layout_height="0dp"
+        android:layout_width="-5dp"
+        android:background="#FFFFFF"
+        android:layout_alignTop="@+id/countryPicker2"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"/>
+    
+    <NumberPicker
+        android:id="@+id/countryPicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/updatebtn"
+        android:layout_alignLeft="@+id/dummy"
+        android:layout_marginBottom="50dp"
+        android:textColor="@color/OffWhite" />
+
+</RelativeLayout>
